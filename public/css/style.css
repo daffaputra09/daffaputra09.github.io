@@ -1,0 +1,72 @@
+
+
+.hero .hero-text {
+    animation: typing 3s steps(25), blink 0.5s step-end infinite alternate;
+
+  }
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 13px;
+    height: 1em;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #EEBE21;
+    border: 0.25em solid black;
+    border-radius: 100vw;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #BE8F15;
+  }
+
+ 
+  .box-area li {
+    position: absolute;
+    margin-top: 100vh;
+    list-style: none;
+    background: #EEBE21;
+
+    animation: animate 20s linear infinite;
+
+  }
+  .box-area li:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .box-area li:nth-child(2) {
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+  }
+  .box-area li:nth-child(3) {
+
+    animation-delay: 5.5s;
+  }
+  .box-area li:nth-child(4) {
+
+    animation-delay: 0s;
+    animation-duration: 15s;
+  }
+  .box-area li:nth-child(5) {
+    animation-delay: 2s;
+  }
+  .box-area li:nth-child(6) {
+    animation-delay: 3.5s;
+  }
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-800px) rotate(360deg);
+      opacity: 0;
+    }
+  }
