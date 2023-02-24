@@ -31,7 +31,8 @@
  
   .box-area li {
     position: absolute;
-    margin-top: 100vh;
+
+    margin-top: 200vh;
     list-style: none;
     background: #EEBE21;
 

@@ -39,6 +39,7 @@
         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
     </button>
   </div>
+  
   <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
     <ul class="flex flex-col p-4 mt-4 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
       <li>
@@ -48,10 +49,7 @@
         <a href="#about" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0 ">About</a>
       </li>
       <li>
-        <a href="#work" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0 ">Work</a>
-      </li>
-      <li>
-        <a href="#achievement" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0 ">Achievement</a>
+        <a href="#work" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0 ">Work & Achievement</a>
       </li>
       <li>
         <a href="#contact" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0 ">Contact</a>
@@ -61,8 +59,8 @@
   </div>
 </nav>
 
-  <div id="home" class="hero bg-[url('../img/bg.webp')] overflow-hidden w-[100%] h-[100vh] flex relative justify-center items-center ">
-    <div id="scene" class="scene absolute h-[100vh] w-[350%] md:h-[100vh] md:w-[440%] lg:h-[100vh] lg:w-[100%] ">
+  <div id="home" class="hero bg-[url('../img/bg.webp')] overflow-hidden w-[100%] min-h-screen flex relative justify-center items-center ">
+    <div id="scene" class="scene absolute min-h-screen w-[350%] md:min-h-screen md:w-[440%] lg:min-h-screen lg:w-[100%] ">
       <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[100%] lg:h-[100%] lg:w-[100%]  " data-depth="-0.10"><img src="public/img/a.webp" /></div>
       <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[100%] lg:h-[100%] lg:w-[100%]  " data-depth="-0.15"><img src="public/img/b.webp" /></div>
       <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[100%] lg:h-[100%] lg:w-[100%]  " data-depth="-0.10"><img src="public/img/c.webp" /></div>
@@ -77,20 +75,70 @@
     <div class="bg-black h-screen w-screen z-0 opacity-30"></div>
     <div class="hero-text whitespace-nowrap absolute text-3xl sm:text-[3rem] font-bold text-white border-r-2 border-white" id="hero-text"></div>
   </div>
-  <div class="animation-area w-[100%] h-[100vh] bg-base" id="about">
-		<ul class="box-area top-0 left-0 w-[100%] h-[100%] overflow-hidden">
-			<li class="left-[73%] w-20 h-20 md:w-20 md:h-20 "></li>
-			<li class="left-[12%] w-5 h-5   md:w-8  md:h-8  "></li>
-			<li class="left-[70%] w-11 h-11 md:w-24 md:h-24 "></li>
-			<li class="left-[42%] w-16 h-16 md:w-36 md:h-36 "></li>
-			<li class="left-[65%] w-14 h-14 md:w-28 md:h-28 "></li>
-			<li class="left-[15%] w-20 h-20 md:w-28 md:h-28 "></li>
-		</ul>
-	</div>
-  <div class="work absolute w-[100%]  bg-blue-400 h-[100vh] text-primary" id="work" ></div>
-  <div class="h-[100vh] w-0 bg-orange-500 "></div>
-  <div class="achievement  bg-green-400 h-[100vh] text-primary" id="achievement" ></div>
-  <div class="contact absolute w-[100%] bg-red-500 h-[100vh] text-primary" id="contact" ></div>
+  <div class="about a w-[100%]  bg-blue-400 min-h-screen " id="about" ></div>
+  <div class="work bg-base" id="work" >
+    <div class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-24 mx-auto text-white">
+    <div class=" ">
+      <h1 class=" font-bold tracking-wider text-2xl md:text-4xl">Work</h1>
+      <ul class="block mt-4 p-0 list-none text-center">
+        <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
+          <a href="https://youtu.be/5M9JHi3omUs" target="_blank">
+          <img src="public/img/bantengan.jpg" alt="">
+          <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 2 Tingkat Nasional</h1>
+          <p>Film dokumenter berjudul <span class="font-bold">Bantengan "Yang Tak Lekang Oleh Zaman"</span></p>
+          <p>&nbsp</p>
+        </a>
+        </li>
+        <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
+          <a href="https://youtu.be/jOG-f_KMrZg" target="_blank">
+          <img src="public/img/apem.png" alt="">
+          <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 5 Tingkat Provinsi</h1>
+          <p>Film dokumenter berjudul <span class="font-bold">Apem "Mungil Penuh Tafsir"</span></p>
+          <p>&nbsp</p>
+        </a>
+        </li>
+        <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
+          <a href="https://youtu.be/mAOe2A74myI" target="_blank">
+          <img src="public/img/kopi.jpg" alt="">
+          <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 1 Tingkat Kota</h1>
+          <p>Film dokumenter berjudul <span class="font-bold">Kopi Sumberdem "Ada Perjalanan Panjang Untuk Menjadi Secangkir Kopi"</span></p>
+        </a>
+        </li>
+      </ul>  
+      </div> 
+      <div class="mt-10">
+        <h1 class=" font-bold tracking-wider text-2xl md:text-4xl">Achievement</h1>
+        <ul class="block mt-4 p-0 list-none text-center">
+          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
+            <a href="https://youtu.be/5M9JHi3omUs" target="_blank">
+            <img src="public/img/bantengan.jpg" alt="">
+            <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 2 Tingkat Nasional</h1>
+            <p>Film dokumenter berjudul <span class="font-bold">Bantengan "Yang Tak Lekang Oleh Zaman"</span></p>
+            <p>&nbsp</p>
+          </a>
+          </li>
+          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
+            <a href="https://youtu.be/jOG-f_KMrZg" target="_blank">
+            <img src="public/img/apem.png" alt="">
+            <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 5 Tingkat Provinsi</h1>
+            <p>Film dokumenter berjudul <span class="font-bold">Apem "Mungil Penuh Tafsir"</span></p>
+            <p>&nbsp</p>
+          </a>
+          </li>
+          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
+            <a href="https://youtu.be/mAOe2A74myI" target="_blank">
+            <img src="public/img/kopi.jpg" alt="">
+            <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 1 Tingkat Kota</h1>
+            <p>Film dokumenter berjudul <span class="font-bold">Kopi Sumberdem "Ada Perjalanan Panjang Untuk Menjadi Secangkir Kopi"</span></p>
+          </a>
+          </li>
+        </ul>  
+      </div> 
+    </div>
+  </div>
+  <div class="contact h-screen" id="contact"></div>
+
+
   
 
 
