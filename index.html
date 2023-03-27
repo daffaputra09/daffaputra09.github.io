@@ -1,366 +1,958 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/VLYV65p9/logo.png">
-  
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.postimg.cc/VLYV65p9/logo.png"
+    />
 
-  <!-- Flowbite -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Parallax -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- icons -->
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="public/css/output.css">
-  <link rel="stylesheet" href="public/css/style.css">
-  <title>Daffa's Portofolio</title>
-</head>
-<body class="font-Open Sans">
-<nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 w-[100%] z-50 fixed">
-  <div class="container flex flex-wrap items-center justify-between mx-auto w-[95%]  ">
-  <a href="#home" class="flex items-center">
-      <img src="https://i.postimg.cc/VLYV65p9/logo.png" class="h-7 mt-1 mr-3 sm:h-9" alt="Flowbite Logo" />
-      <span class="self-center text-xl font-semibold whitespace-nowrap text-white ">Daffa Putra</span>
-  </a>
-  <div class="flex md:order-2 items-center">
-      <a href="https://github.com/daffaputra09"    target="_blank" class="transition-all duration-200 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://i.postimg.cc/fbD1s6L5/GitHub.png"   class="h-8 lg:h-10" alt="behance"  ></a>
-      <a href="https://www.behance.net/daffaa-dp"    target="_blank" class="transition-all duration-200 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://i.postimg.cc/vTHmzkGS/behance.webp"   class="h-8 lg:h-10" alt="behance"  ></a>
-      <a href="https://www.instagram.com/daffaa.dp"  target="_blank" class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://i.postimg.cc/YqW5P8jX/instagram.webp" class="h-8 lg:h-10" alt="instagram"  ></a>
-      <a href="https://www.linkedin.com/in/daffaa-dp" target="_blank" class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://i.postimg.cc/J7D71NGX/linkedin.webp"  class="h-8 lg:h-10" alt="linkedin"  ></a>
-      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-1 text-sm text-white rounded-full md:hidden lg:hover:bg-primary  " aria-controls="navbar-cta" aria-expanded="false">
-        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-    </button>
-  </div>
-  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
-    <ul class="flex flex-col p-4 mt-4 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
-      <li>
-        <a href="#home" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0" >Home</a>
-      </li>
-      <li>
-        <a href="#about" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0 ">About</a>
-      </li>
-      <li>
-        <a href="#work" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0 ">Work & Achievement</a>
-      </li>
-      <li>
-        <a href="#contact" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0 ">Contact</a>
-      </li>
-    </ul>
-  </div>
-  </div>
-</nav>
-  <div id="home" class="hero bg-[url('../img/bg.webp')] overflow-hidden w-[100%] min-h-screen flex relative justify-center items-center ">
-    <div id="scene" class="scene absolute min-h-screen w-[350%] md:min-h-screen md:w-[440%] lg:min-h-screen lg:w-[100%] ">
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[100%] lg:h-[100%] lg:w-[100%]  " data-depth="-0.10"><img src="public/img/a.webp" /></div>
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[100%] lg:h-[100%] lg:w-[100%]  " data-depth="-0.15"><img src="public/img/b.webp" /></div>
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[100%] lg:h-[100%] lg:w-[100%]  " data-depth="-0.10"><img src="public/img/c.webp" /></div>
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]  "  data-depth="0.65"><img  src="public/img/d.webp" /></div>
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]  "  data-depth="0.20"><img  src="public/img/e.webp" /></div>
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]  "  data-depth="0.35"><img  src="public/img/f.webp" /></div>
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]  "  data-depth="0.10"><img  src="public/img/g.webp" /></div>
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]  "  data-depth="0.60"><img  src="public/img/h.webp" /></div>
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]  "  data-depth="0.10"><img  src="public/img/i.webp" /></div>
-      <div class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]  "  data-depth="0.30"><img  src="public/img/j.webp" /></div>
-    </div>
-    <div class="bg-black h-screen w-screen z-0 opacity-30"></div>
-    <div class="hero-text whitespace-nowrap absolute text-3xl sm:text-[3rem] font-bold text-white border-r-2 border-white" id="hero-text"></div>
-  </div>
-  <div class="about bg-base   " id="about" >
-    <div class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-16 bg-base mx-auto text-white">
-      <h1 class="font-bold tracking-wider text-2xl md:text-4xl  ">About Me</h1>
-      <div class="gap-[4vw] mt-7 md:mt-14 grid lg:inline-grid lg:grid-cols-2 md:grid-cols-2">
-        <div class="md:text-lg lg:w-[140%]">
-          <p>Halo! saya <span class="text-primary">Daffa Putra Pasetya</span> , seorang pelajar yang tertarik pada bidang Front-End Development dan UI/UX Design. Saya merasa sangat tertarik dengan bagaimana desain dan development dapat bersatu untuk menciptakan pengalaman digital yang menakjubkan bagi pengguna.</p> 
-          <br>
-          <p>Saya senang belajar dan mencari tahu tentang tren terbaru dalam industri ini. Saya juga sedang meningkatkan keterampilan saya dalam bahasa pemrograman seperti HTML, CSS, dan JavaScript, serta aplikasi desain seperti Adobe Photoshop dan Figma.</p>
-          <br>
-          <p>Saya sangat bersemangat dengan masa depan di bidang Front-End Development dan UI/UX Design. Terima kasih sudah mengunjungi profil saya!</p>
-          <br>
-          <p>Saya sangat bersemangat dengan masa depan di bidang Front-End Development dan UI/UX Design. Terima kasih sudah mengunjungi profil saya!</p>
-        
+    <!-- Parallax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <!-- icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="public/css/output.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Daffa's Portofolio</title>
+  </head>
+  <body class="font-Open Sans">
+    <nav
+      class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 w-[100%] z-50 fixed"
+    >
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto w-[95%]"
+      >
+        <a href="#home" class="flex items-center">
+          <img
+            src="https://i.postimg.cc/VLYV65p9/logo.png"
+            class="h-7 mt-1 mr-3 sm:h-9"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap text-white"
+            >Daffa Putra</span
+          >
+        </a>
+        <div class="flex md:order-2 items-center">
+          <a
+            href="https://github.com/daffaputra09"
+            target="_blank"
+            class="transition-all duration-200 hover:bg-primary rounded-full mx-1 md:mx-2 md:mr-0 items-center h-8 lg:h-10"
+            ><img
+              src="https://i.postimg.cc/fbD1s6L5/GitHub.png"
+              class="h-8 lg:h-10"
+              alt="behance"
+          /></a>
+          <a
+            href="https://www.behance.net/daffaa-dp"
+            target="_blank"
+            class="transition-all duration-200 hover:bg-primary rounded-full mx-1 md:mx-2 md:mr-0 items-center h-8 lg:h-10"
+            ><img
+              src="https://i.postimg.cc/vTHmzkGS/behance.webp"
+              class="h-8 lg:h-10"
+              alt="behance"
+          /></a>
+          <a
+            href="https://www.instagram.com/daffaa.dp"
+            target="_blank"
+            class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2 md:mr-0 items-center h-8 lg:h-10"
+            ><img
+              src="https://i.postimg.cc/YqW5P8jX/instagram.webp"
+              class="h-8 lg:h-10"
+              alt="instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/daffaa-dp"
+            target="_blank"
+            class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2 md:mr-0 items-center h-8 lg:h-10"
+            ><img
+              src="https://i.postimg.cc/J7D71NGX/linkedin.webp"
+              class="h-8 lg:h-10"
+              alt="linkedin"
+          /></a>
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-1 text-sm text-white rounded-full md:hidden lg:hover:bg-primary"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
         </div>
-        <div class="mt-7 md:mt-0">
-          <img src="public/img/about.webp" class="w-96 mx-auto lg:ml-auto lg:mr-0 " alt="">
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-cta"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 rounded-lg bg-black md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0"
+          >
+            <li>
+              <a
+                href="#home"
+                class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#work"
+                class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0"
+                >Work & Achievement</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary md:hover:bg-transparent md:hover:text-primary md:p-0"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="home"
+      class="hero bg-[url('../img/bg.webp')] overflow-hidden w-[100%] min-h-screen flex relative justify-center items-center"
+    >
+      <div
+        id="scene"
+        class="scene absolute min-h-screen w-[350%] md:min-h-screen md:w-[440%] lg:min-h-screen lg:w-[100%]"
+      >
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[100%] lg:h-[100%] lg:w-[100%]"
+          data-depth="-0.10"
+        >
+          <img src="public/img/a.webp" />
+        </div>
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[100%] lg:h-[100%] lg:w-[100%]"
+          data-depth="-0.15"
+        >
+          <img src="public/img/b.webp" />
+        </div>
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[100%] lg:h-[100%] lg:w-[100%]"
+          data-depth="-0.10"
+        >
+          <img src="public/img/c.webp" />
+        </div>
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]"
+          data-depth="0.65"
+        >
+          <img src="public/img/d.webp" />
+        </div>
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]"
+          data-depth="0.20"
+        >
+          <img src="public/img/e.webp" />
+        </div>
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]"
+          data-depth="0.35"
+        >
+          <img src="public/img/f.webp" />
+        </div>
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]"
+          data-depth="0.10"
+        >
+          <img src="public/img/g.webp" />
+        </div>
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]"
+          data-depth="0.60"
+        >
+          <img src="public/img/h.webp" />
+        </div>
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]"
+          data-depth="0.10"
+        >
+          <img src="public/img/i.webp" />
+        </div>
+        <div
+          class="mt-10 sm:mt-0 md:mt-20 md:ml-96 md:pl-16 lg:pl-0 lg:ml-0 lg:mt-0 w-[85%] lg:h-[100%] lg:w-[100%]"
+          data-depth="0.30"
+        >
+          <img src="public/img/j.webp" />
+        </div>
+      </div>
+      <div class="bg-black h-screen w-screen z-0 opacity-30"></div>
+      <div
+        class="hero-text whitespace-nowrap absolute text-3xl sm:text-[3rem] font-bold text-white border-r-2 border-white"
+        id="hero-text"
+      ></div>
+    </div>
+    <div class="about bg-base" id="about">
+      <div
+        class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-16 bg-base mx-auto text-white"
+      >
+        <h1 class="font-bold tracking-wider text-2xl md:text-4xl">About Me</h1>
+        <div
+          class="gap-[4vw] mt-7 md:mt-14 grid lg:inline-grid lg:grid-cols-2 md:grid-cols-2"
+        >
+          <div class="md:text-lg lg:w-[140%]">
+            <p>
+              Halo! saya <span class="text-primary">Daffa Putra Pasetya</span> ,
+              seorang pelajar yang tertarik pada bidang Front-End Development
+              dan UI/UX Design. Saya merasa sangat tertarik dengan bagaimana
+              desain dan development dapat bersatu untuk menciptakan pengalaman
+              digital yang menakjubkan bagi pengguna.
+            </p>
+            <br />
+            <p>
+              Saya senang belajar dan mencari tahu tentang tren terbaru dalam
+              industri ini. Saya juga sedang meningkatkan keterampilan saya
+              dalam bahasa pemrograman seperti HTML, CSS, dan JavaScript, serta
+              aplikasi desain seperti Adobe Photoshop dan Figma.
+            </p>
+            <br />
+            <p>
+              Saya sangat bersemangat dengan masa depan di bidang Front-End
+              Development dan UI/UX Design. Terima kasih sudah mengunjungi
+              profil saya!
+            </p>
+            <br />
+            <p>
+              Saya sangat bersemangat dengan masa depan di bidang Front-End
+              Development dan UI/UX Design. Terima kasih sudah mengunjungi
+              profil saya!
+            </p>
+          </div>
+          <div class="mt-7 md:mt-0">
+            <img
+              src="public/img/about.webp"
+              class="w-96 mx-auto lg:ml-auto lg:mr-0"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="work bg-base" id="work" >
-    <div class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-24 mx-auto text-white">
-    <div class=" ">
-      <h1 class=" font-bold tracking-wider text-2xl md:text-4xl">Work</h1>
-      <ul class="block mt-4 p-0 list-none text-center">
-        <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96  hover:scale-105 transition-all duration-500" >
-          <button  data-modal-target="Otorent" data-modal-toggle="Otorent" class="text-start">
-          <img src="public/img/otorent.webp" alt="">
-          <h1 class="font-semibold mt-3 text-xl md:text-2xl">Otorent UI/UX Design</h1>
-          <p>Car Rental App</p>
-          <p>&nbsp</p>
-        </button>
-        </li>
-        <div id="Otorent" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
-          <div class="relative w-full h-full max-w-2xl md:h-auto">
-              <!-- Modal content -->
-              <div class="relative  rounded-lg shadow bg-second">
+    <div class="work bg-base" id="work">
+      <div class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-24 mx-auto text-white">
+        <div class=" ">
+          <h1 class="font-bold tracking-wider text-2xl md:text-4xl">Work</h1>
+          <ul class="block mt-4 p-0 list-none text-center">
+            <li
+              class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6 w-[96%] md:w-80 lg:w-96 hover:scale-105 transition-all duration-500"
+            >
+              <button
+                data-modal-target="Otorent"
+                data-modal-toggle="Otorent"
+                class="text-start"
+              >
+                <img src="public/img/otorent.webp" alt="" />
+                <h1 class="font-semibold mt-3 text-xl md:text-2xl">
+                  Otorent UI/UX Design
+                </h1>
+                <p>Car Rental App</p>
+                <p>&nbsp</p>
+              </button>
+            </li>
+            <div
+              id="Otorent"
+              data-modal-backdrop="static"
+              tabindex="-1"
+              aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
+            >
+              <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <!-- Modal content -->
+                <div class="relative rounded-lg shadow bg-second">
                   <!-- Modal header -->
-                  <div class="flex items-start justify-between p-4 pt-5 ">
-                      <h3 class="text-xl font-semibold text-white">
-                        Otorent UI/UX Design
-                      </h3>
-                      <button type="button" class="text-gray-400 bg-transparent  rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white" data-modal-hide="Otorent">
-                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
-                      </button>
+                  <div class="flex items-start justify-between p-4 pt-5">
+                    <h3 class="text-xl font-semibold text-white">
+                      Otorent UI/UX Design
+                    </h3>
+                    <button
+                      type="button"
+                      class="text-gray-400 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white"
+                      data-modal-hide="Otorent"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
                   </div>
                   <!-- Modal body -->
-                  <div id="indicators-carousel" class="relative" data-carousel="static">
+                  <div
+                    id="indicators-carousel"
+                    class="relative"
+                    data-carousel="static"
+                  >
                     <!-- Carousel wrapper -->
-                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">                        
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="public/img/otorent.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                        </div>                      
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="public/img/otorent2.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                        </div>                       
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="public/img/otorent3.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                        </div>                       
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="public/img/otorent4.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                        </div>
-
+                    <div
+                      class="relative h-56 overflow-hidden rounded-lg md:h-96"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="public/img/otorent.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/otorent2.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/otorent3.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/otorent4.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
                     </div>
                     <!-- Slider controls -->
-                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
-                            <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                            <span class="sr-only">Previous</span>
-                        </span>
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
                     </button>
-                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
-                            <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            <span class="sr-only">Next</span>
-                        </span>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
                     </button>
-                </div>
-                  <!-- Modal footer -->
-                  <div class="flex items-center p-6 space-x-2 text-start ">
-                      <p>Otorent, UI / UX Design dengan studi kasus aplikasi sewa kendaraan. Dalam penggunaannya, user dapat memilih kategori, memilih kendaraan, dan menyewa kendaraan. Desain ini dibuat dengan menggunakan tools Figma</p>
                   </div>
+                  <!-- Modal footer -->
+                  <div class="flex items-center p-6 space-x-2 text-start">
+                    <p>
+                      Otorent, UI / UX Design dengan studi kasus aplikasi sewa
+                      kendaraan. Dalam penggunaannya, user dapat memilih
+                      kategori, memilih kendaraan, dan menyewa kendaraan. Desain
+                      ini dibuat dengan menggunakan tools Figma
+                    </p>
+                  </div>
+                </div>
               </div>
-          </div>
-      </div>
-      <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96  hover:scale-105 transition-all duration-500" >
-        <button  data-modal-target="Kangyucil" data-modal-toggle="Kangyucil" class="text-start">
-        <img src="public/img/kangyucil.webp" alt="">
-        <h1 class="font-semibold mt-3 text-xl md:text-2xl"> Event Documentation</h1>
-        <p>Kakang Mbakyu Cilik 2022</p>
-        <p>&nbsp</p>
-      </button>
-      </li>
-      <div id="Kangyucil" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
-        <div class="relative w-full h-full max-w-2xl md:h-auto">
-            <!-- Modal content -->
-            <div class="relative  rounded-lg shadow bg-second">
-                <!-- Modal header -->
-                <div class="flex items-start justify-between p-4 pt-5 ">
+            </div>
+            <li
+              class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6 w-[96%] md:w-80 lg:w-96 hover:scale-105 transition-all duration-500"
+            >
+              <button
+                data-modal-target="Kangyucil"
+                data-modal-toggle="Kangyucil"
+                class="text-start"
+              >
+                <img src="public/img/kangyucil.webp" alt="" />
+                <h1 class="font-semibold mt-3 text-xl md:text-2xl">
+                  Event Documentation
+                </h1>
+                <p>Kakang Mbakyu Cilik 2022</p>
+                <p>&nbsp</p>
+              </button>
+            </li>
+            <div
+              id="Kangyucil"
+              data-modal-backdrop="static"
+              tabindex="-1"
+              aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
+            >
+              <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <!-- Modal content -->
+                <div class="relative rounded-lg shadow bg-second">
+                  <!-- Modal header -->
+                  <div class="flex items-start justify-between p-4 pt-5">
                     <h3 class="text-xl font-semibold text-white">
                       Kakang Mbakyu Cilik 2022
                     </h3>
-                    <button type="button" class="text-gray-400 bg-transparent  rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white" data-modal-hide="Kangyucil">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                    <button
+                      type="button"
+                      class="text-gray-400 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white"
+                      data-modal-hide="Kangyucil"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
                     </button>
-                </div>
-                <!-- Modal body -->
-                <div id="indicators-carousel" class="relative" data-carousel="static">
-                  <!-- Carousel wrapper -->
-                  <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">                      
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                          <img src="public/img/kangyucil.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                      </div>                  
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                          <img src="public/img/kangyucil2.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                      </div>                      
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                          <img src="public/img/kangyucil3.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                      </div>                     
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                          <img src="public/img/kangyucil4.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                      </div>
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                          <img src="public/img/kangyucil5.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                      </div>
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                          <img src="public/img/kangyucil6.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                      </div>
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                          <img src="public/img/kangyucil7.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                      </div>
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                          <img src="public/img/kangyucil8.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                      </div>
-                      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                          <img src="public/img/kangyucil9.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                      </div>
-                  </div>
-                  <!-- Slider controls -->
-                  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
-                          <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                          <span class="sr-only">Previous</span>
-                      </span>
-                  </button>
-                  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
-                          <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                          <span class="sr-only">Next</span>
-                      </span>
-                  </button>
-              </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-6 space-x-2 text-start ">
-                    <p>Event Documentation Kakang Mbakyu Cilik 2022. Kakang Mbakyu Cilik Kota Malang merupakan program yang dibuat dengan tujuan untuk mempermudah Dinas Kebudayaan dan Pariwisata Kota Malang dalam mencetak atau melahirkan duta wisata yang profesional dan berkarakter di Kota Malang. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-        <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96  hover:scale-105 transition-all duration-500" >
-          <button  data-modal-target="Drent" data-modal-toggle="Drent" class="text-start">
-          <img src="public/img/D-Rent.webp" alt="">
-          <h1 class="font-semibold mt-3 text-xl md:text-2xl"> D-Rent UI/UX Design</h1>
-          <p>Camera Rental App</p>
-          <p>&nbsp</p>
-        </button>
-        </li>
-        <div id="Drent" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
-          <div class="relative w-full h-full max-w-2xl md:h-auto">
-              <!-- Modal content -->
-              <div class="relative  rounded-lg shadow bg-second">
-                  <!-- Modal header -->
-                  <div class="flex items-start justify-between p-4 pt-5 ">
-                      <h3 class="text-xl font-semibold text-white">
-                        D-Rent UI/UX Design
-                      </h3>
-                      <button type="button" class="text-gray-400 bg-transparent  rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white" data-modal-hide="Drent">
-                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
-                      </button>
                   </div>
                   <!-- Modal body -->
-                  <div id="indicators-carousel" class="relative" data-carousel="static">
+                  <div
+                    id="indicators-carousel"
+                    class="relative"
+                    data-carousel="static"
+                  >
                     <!-- Carousel wrapper -->
-                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">                        
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                            <img src="public/img/D-Rent.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                        </div>                        
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="public/img/D-Rent2.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                        </div>                        
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="public/img/D-Rent3.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                        </div>                       
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="public/img/D-Rent4.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                        </div>
+                    <div
+                      class="relative h-56 overflow-hidden rounded-lg md:h-96"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="public/img/kangyucil.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/kangyucil2.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/kangyucil3.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/kangyucil4.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/kangyucil5.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/kangyucil6.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/kangyucil7.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/kangyucil8.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/kangyucil9.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
                     </div>
                     <!-- Slider controls -->
-                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
-                            <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                            <span class="sr-only">Previous</span>
-                        </span>
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
                     </button>
-                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
-                            <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            <span class="sr-only">Next</span>
-                        </span>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
                     </button>
-                </div>
-                  <!-- Modal footer -->
-                  <div class="flex items-center p-6 space-x-2 text-start ">
-                      <p>D-Rent, UI / UX Design dengan studi kasus aplikasi sewa kamera. Dalam penggunaannya, user dapat memilih kategori dan alat, menambah ke wishlist, menyewa, dan melakukan update pada informasi profil. Desain ini dibuat dengan menggunakan tools Figma
-                      </p>
                   </div>
+                  <!-- Modal footer -->
+                  <div class="flex items-center p-6 space-x-2 text-start">
+                    <p>
+                      Event Documentation Kakang Mbakyu Cilik 2022. Kakang
+                      Mbakyu Cilik Kota Malang merupakan program yang dibuat
+                      dengan tujuan untuk mempermudah Dinas Kebudayaan dan
+                      Pariwisata Kota Malang dalam mencetak atau melahirkan duta
+                      wisata yang profesional dan berkarakter di Kota Malang.
+                    </p>
+                  </div>
+                </div>
               </div>
-          </div>
-      </div>
-      </ul>  
-      </div> 
-      <div class="mt-10">
-        <h1 class=" font-bold tracking-wider text-2xl md:text-4xl">Achievement</h1>
-        <ul class="block mt-4 p-0 list-none text-center">
-          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
-            <a href="https://youtu.be/5M9JHi3omUs" target="_blank">
-            <img src="public/img/bantengan.jpg" alt="">
-            <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 2 Tingkat Nasional</h1>
-            <p>Film dokumenter berjudul <span class="font-bold">Bantengan "Yang Tak Lekang Oleh Zaman"</span></p>
-            <p>&nbsp</p>
-          </a>
-          </li>
-          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
-            <a href="https://youtu.be/jOG-f_KMrZg" target="_blank">
-            <img src="public/img/apem.png" alt="">
-            <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 5 Tingkat Provinsi</h1>
-            <p>Film dokumenter berjudul <span class="font-bold">Apem "Mungil Penuh Tafsir"</span></p>
-            <p>&nbsp</p>
-          </a>
-          </li>
-          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
-            <a href="https://youtu.be/mAOe2A74myI" target="_blank">
-            <img src="public/img/kopi.jpg" alt="">
-            <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 1 Tingkat Kota</h1>
-            <p>Film dokumenter berjudul <span class="font-bold">Kopi Sumberdem "Ada Perjalanan Panjang Untuk Menjadi Secangkir Kopi"</span></p>
-          </a>
-          </li>
-        </ul>  
-      </div> 
-    </div>
-  </div>
-  <div class="contact bg-base" id="contact" >
-    <div class="w-[90%] pt-1 md:pt-1 pb-20 md:pb-24 mx-auto text-white ">
-      <div class="gap-[4vw] mt-7 md:mt-14 grid lg:inline-grid lg:grid-cols-2 md:grid-cols-2 w-[100%] pt-16 pb-16 lg:pb-10 bg-second rounded-2xl">
-        <div class="">
-          <img src="contact.svg" class="w-96 lg:w-[28rem] mx-auto  md:pt-12 items-center" alt="">
+            </div>
+            <li
+              class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6 w-[96%] md:w-80 lg:w-96 hover:scale-105 transition-all duration-500"
+            >
+              <button
+                data-modal-target="Drent"
+                data-modal-toggle="Drent"
+                class="text-start"
+              >
+                <img src="public/img/D-Rent.webp" alt="" />
+                <h1 class="font-semibold mt-3 text-xl md:text-2xl">
+                  D-Rent UI/UX Design
+                </h1>
+                <p>Camera Rental App</p>
+                <p>&nbsp</p>
+              </button>
+            </li>
+            <div
+              id="Drent"
+              data-modal-backdrop="static"
+              tabindex="-1"
+              aria-hidden="true"
+              class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
+            >
+              <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <!-- Modal content -->
+                <div class="relative rounded-lg shadow bg-second">
+                  <!-- Modal header -->
+                  <div class="flex items-start justify-between p-4 pt-5">
+                    <h3 class="text-xl font-semibold text-white">
+                      D-Rent UI/UX Design
+                    </h3>
+                    <button
+                      type="button"
+                      class="text-gray-400 bg-transparent rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white"
+                      data-modal-hide="Drent"
+                    >
+                      <svg
+                        class="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div
+                    id="indicators-carousel"
+                    class="relative"
+                    data-carousel="static"
+                  >
+                    <!-- Carousel wrapper -->
+                    <div
+                      class="relative h-56 overflow-hidden rounded-lg md:h-96"
+                    >
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item="active"
+                      >
+                        <img
+                          src="public/img/D-Rent.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/D-Rent2.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/D-Rent3.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                      <div
+                        class="hidden duration-700 ease-in-out"
+                        data-carousel-item
+                      >
+                        <img
+                          src="public/img/D-Rent4.webp"
+                          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button
+                      type="button"
+                      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-prev
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                      data-carousel-next
+                    >
+                      <span
+                        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"
+                          ></path>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                      </span>
+                    </button>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="flex items-center p-6 space-x-2 text-start">
+                    <p>
+                      D-Rent, UI / UX Design dengan studi kasus aplikasi sewa
+                      kamera. Dalam penggunaannya, user dapat memilih kategori
+                      dan alat, menambah ke wishlist, menyewa, dan melakukan
+                      update pada informasi profil. Desain ini dibuat dengan
+                      menggunakan tools Figma
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
         </div>
-        <div class="w-[90%] mx-auto">
+        <div class="mt-10">
+          <h1 class="font-bold tracking-wider text-2xl md:text-4xl">
+            Achievement
+          </h1>
+          <ul class="block mt-4 p-0 list-none text-center">
+            <li
+              class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6 w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500"
+            >
+              <a href="https://youtu.be/5M9JHi3omUs" target="_blank">
+                <img src="public/img/bantengan.jpg" alt="" />
+                <h1 class="font-semibold mt-3 text-xl md:text-2xl">
+                  Juara 2 Tingkat Nasional
+                </h1>
+                <p>
+                  Film dokumenter berjudul
+                  <span class="font-bold"
+                    >Bantengan "Yang Tak Lekang Oleh Zaman"</span
+                  >
+                </p>
+                <p>&nbsp</p>
+              </a>
+            </li>
+            <li
+              class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6 w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500"
+            >
+              <a href="https://youtu.be/jOG-f_KMrZg" target="_blank">
+                <img src="public/img/apem.png" alt="" />
+                <h1 class="font-semibold mt-3 text-xl md:text-2xl">
+                  Juara 5 Tingkat Provinsi
+                </h1>
+                <p>
+                  Film dokumenter berjudul
+                  <span class="font-bold">Apem "Mungil Penuh Tafsir"</span>
+                </p>
+                <p>&nbsp</p>
+              </a>
+            </li>
+            <li
+              class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6 w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500"
+            >
+              <a href="https://youtu.be/mAOe2A74myI" target="_blank">
+                <img src="public/img/kopi.jpg" alt="" />
+                <h1 class="font-semibold mt-3 text-xl md:text-2xl">
+                  Juara 1 Tingkat Kota
+                </h1>
+                <p>
+                  Film dokumenter berjudul
+                  <span class="font-bold"
+                    >Kopi Sumberdem "Ada Perjalanan Panjang Untuk Menjadi
+                    Secangkir Kopi"</span
+                  >
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contact bg-base" id="contact">
+      <div class="w-[90%] pt-1 md:pt-1 pb-8 md:pb-12 mx-auto text-white">
+        <div
+          class="gap-[4vw] mt-7 md:mt-14 grid lg:inline-grid lg:grid-cols-2 md:grid-cols-2 w-[100%] pt-16 pb-16 lg:pb-10 bg-second rounded-2xl"
+        >
           <div class="">
-          <h2 class="font-semibold text-xl md:text-2xl">Contact Me</h2>
-          <form action="" method="post" class="mt-5">
-            <input type="text" name="Name" class="w-[100%] my-3 rounded-lg bg-form  border-none ring-0 stroke-none py-3" placeholder="Your Name">
-            <input type="text" name="Email" class="w-[100%] my-3 rounded-lg bg-form border-none ring-0 stroke-none py-3" placeholder="Your Email">
-            <textarea name="Message" id=""  rows="8" class="w-[100%] my-3 rounded-lg bg-form border-none ring-0 stroke-none py-3 px-3" placeholder="Message"></textarea>
-            <button type="submit" class="bg-primary hover:bg-darkprimary w-[100%] mt-3 py-3 rounded-full">Submit</button>
-          </form>
-        </div>
+            <img
+              src="contact.svg"
+              class="w-96 lg:w-[28rem] mx-auto md:pt-12 items-center"
+              alt=""
+            />
+          </div>
+          <div class="w-[90%] mx-auto">
+            <div class="">
+              <h2 class="font-semibold text-xl md:text-2xl">Contact Me</h2>
+              <form action="" method="post" class="mt-5">
+                <input
+                  type="text"
+                  name="Name"
+                  class="w-[100%] my-3 rounded-lg bg-form border-none ring-0 stroke-none py-3"
+                  placeholder="Your Name"
+                />
+                <input
+                  type="text"
+                  name="Email"
+                  class="w-[100%] my-3 rounded-lg bg-form border-none ring-0 stroke-none py-3"
+                  placeholder="Your Email"
+                />
+                <textarea
+                  name="Message"
+                  id=""
+                  rows="8"
+                  class="w-[100%] my-3 rounded-lg bg-form border-none ring-0 stroke-none py-3 px-3"
+                  placeholder="Message"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="bg-primary hover:bg-darkprimary w-[100%] mt-3 py-3 rounded-full"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <!-- Flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 
-<!-- Flowbite -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <!-- Text -->
+    <script src="public/js/typing.js"></script>
 
-<!-- Text -->
-  <script src="public/js/typing.js"></script>
-  
-
-<!-- Parallax -->
-  <script>
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
-  </script>
-      <!-- icons -->
-      <script>
-        feather.replace();
-      </script>
-</body>
+    <!-- Parallax -->
+    <script>
+      var scene = document.getElementById("scene");
+      var parallax = new Parallax(scene);
+    </script>
+    <!-- icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
