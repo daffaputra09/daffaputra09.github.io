@@ -12,6 +12,7 @@ module.exports = {
         'lightprimary': '#f4d671',
         'second' : '#2C2B3A',
         'base': '#0f0e17',
+        'form' : '#434158'
       },
     },
   },
