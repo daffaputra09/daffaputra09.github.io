@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/VLYV65p9/logo.png">
+  
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Flowbite -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Parallax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+  <!-- icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="public/css/output.css">
+  <!-- <link rel="stylesheet" href="public/css/style.css"> -->
+  <title>Daffa's Portofolio</title>
+</head>
+<body class="overflow-x-hidden">
+    <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 w-[100%] z-50 fixed">
+        <div class="container flex flex-wrap items-center justify-between mx-auto w-[95%]  ">
+        <a href="#home" class="flex items-center">
+            <img src="https://raw.githubusercontent.com/daffaputra09/assets/main/logo.png" class="h-7 mt-1 mr-3 sm:h-9" alt="Daffa's Logo" />
+            <span class="self-center text-lg md:text-xl font-semibold whitespace-nowrap text-white ">Daffa Putra</span>
+        </a>
+        <div class="flex lg:order-2 items-center">
+            <a href="https://github.com/daffaputra09"    target="_blank" class="transition-all duration-200 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/GitHub.png"   class="h-8 lg:h-10" alt="Github"  ></a>
+            <a href="https://www.behance.net/daffaa-dp"    target="_blank" class="transition-all duration-200 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/behance.png"   class="h-8 lg:h-10" alt="behance"  ></a>
+            <a href="https://www.instagram.com/daffaa.dp"  target="_blank" class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/instagram.png" class="h-8 lg:h-10" alt="instagram"  ></a>
+            <a href="https://www.linkedin.com/in/daffaa-dp" target="_blank" class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/linkedin.png"  class="h-8 lg:h-10" alt="linkedin"  ></a>
+            <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-1 text-sm text-white rounded-full lg:hidden lg:hover:bg-primary  " aria-controls="navbar-cta" aria-expanded="false">
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full lg:flex lg:w-auto md:order-1" id="navbar-cta">
+          <ul class="flex flex-col p-4 mt-4 rounded-lg bg-black lg:flex-row lg:space-x-8 lg:mt-0 lg:text-sm lg:font-medium lg:border-0 ">
+            <li>
+              <a href="#home" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary lg:hover:bg-transparent lg:hover:text-primary lg:p-0" >Home</a>
+            </li>
+            <li>
+              <a href="#about" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary lg:hover:bg-transparent lg:hover:text-primary lg:p-0 ">About</a>
+            </li>
+            <li>
+              <a href="#work" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary lg:hover:bg-transparent lg:hover:text-primary lg:p-0 ">Work & Achievement</a>
+            </li>
+            <li>
+              <a href="#contact" class="block py-2 pl-3 pr-4 text-white rounded hover:bg-primary lg:hover:bg-transparent lg:hover:text-primary lg:p-0 ">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    <div class="flex relative justify-center items-center">
+        <div id="desktop-scene" class=" w-screen h-screen text-center relative overflow-hidden hidden lg:block">
+            <img src="public/img/bg.webp" alt="Foto Anda" class="mx-auto w-full h-full object-cover">   
+            <img src="public/img/a.webp" class="absolute w-full h-full  object-cover " data-depth="-0.10"/>
+            <img src="public/img/b.webp" class="absolute w-full h-full  object-cover " data-depth="-0.15"/>
+            <img src="public/img/c.webp" class="absolute w-full h-full  object-cover " data-depth="-0.10"/>
+            <img src="public/img/d.webp" class="absolute w-full h-full  object-cover " data-depth="0.65"/>
+            <img src="public/img/e.webp" class="absolute w-full h-full  object-cover " data-depth="0.20"/>
+            <img src="public/img/f.webp" class="absolute w-full h-full  object-cover " data-depth="0.35"/>
+            <img src="public/img/g.webp" class="absolute w-full h-full  object-cover " data-depth="0.10"/>
+            <img src="public/img/h.webp" class="absolute w-full h-full  object-cover " data-depth="0.60"/>
+            <img src="public/img/i.webp" class="absolute w-full h-full  object-cover " data-depth="0.10"/>
+            <img src="public/img/j.webp" class="absolute w-full h-full  object-cover " data-depth="0.30"/>
+        </div>
+
+        <div id="mobile-scene" class="h-screen text-center overflow-hidden lg:hidden  ">
+            <img src="public/img/bg2.png" alt="Foto Anda" class="mx-auto h-full object-cover">   
+            <img src="public/img/a.webp" class="h-full object-cover" data-depth="-0.10"/>
+            <img src="public/img/b.webp" class="h-full object-cover" data-depth="-0.15"/>
+            <img src="public/img/c.webp" class="h-full object-cover" data-depth="-0.10"/>
+            <img src="public/img/d.webp" class="h-full object-cover" data-depth="0.65"/>
+            <img src="public/img/e.webp" class="h-full object-cover" data-depth="0.20"/>
+            <img src="public/img/f.webp" class="h-full object-cover" data-depth="0.35"/>
+            <img src="public/img/g.webp" class="h-full object-cover" data-depth="0.10"/>
+            <img src="public/img/h.webp" class="h-full object-cover" data-depth="0.60"/>
+            <img src="public/img/i.webp" class="h-full object-cover" data-depth="0.10"/>
+            <img src="public/img/j.webp" class="h-full object-cover" data-depth="0.30"/>
+        </div>
+        <div class="bg-black h-screen w-screen z-0 opacity-30 absolute"></div>
+        <div class="hero-text whitespace-nowrap absolute text-3xl sm:text-[3rem] font-bold text-white border-r-2 border-white" id="hero-text"></div>
+    </div>
+    <div class="h-screen bg-purple-800">
+    adawd
+    </div>
+
+
+
+
+
+<!-- Flowbite -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script src="public/js/typing.js"></script>
+    <script>
+        var scene = document.getElementById('desktop-scene');
+        var parallax = new Parallax(scene);
+    </script>
+    <script>
+        var scene = document.getElementById('mobile-scene');
+        var parallax = new Parallax(scene);
+    </script>
+          <!-- icons -->
+          <script>
+            feather.replace();
+          </script>
+</body>
+</html>
