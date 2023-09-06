@@ -419,6 +419,11 @@ video {
   display: none;
 }
 
+* {
+  scrollbar-color: initial;
+  scrollbar-width: initial;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -711,22 +716,6 @@ video {
   height: 100vh;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[900px\] {
-  height: 900px;
-}
-
-.h-\[90\] {
-  height: 90;
-}
-
-.h-\[90px\] {
-  height: 90px;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -777,20 +766,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .min-w-max {
@@ -941,11 +916,6 @@ video {
   background-color: rgb(107 33 168 / var(--tw-bg-opacity));
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .bg-second {
   --tw-bg-opacity: 1;
   background-color: rgb(44 43 58 / var(--tw-bg-opacity));
@@ -955,13 +925,12 @@ video {
   background-color: transparent;
 }
 
-.bg-green-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\.\.\/img\/bg\.webp\'\)\] {
   background-image: url('../img/bg.webp');
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .stroke-none {
@@ -1162,6 +1131,201 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.scrollbar {
+  scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+  border-radius: var(--scrollbar-track-radius);
+}
+
+.scrollbar::-webkit-scrollbar-track:hover {
+  background-color: var(--scrollbar-track-hover, var(--scrollbar-track));
+}
+
+.scrollbar::-webkit-scrollbar-track:active {
+  background-color: var(--scrollbar-track-active, var(--scrollbar-track-hover, var(--scrollbar-track)));
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: var(--scrollbar-thumb-radius);
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover, var(--scrollbar-thumb));
+}
+
+.scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-thumb-active, var(--scrollbar-thumb-hover, var(--scrollbar-thumb)));
+}
+
+.scrollbar::-webkit-scrollbar-corner {
+  background-color: var(--scrollbar-corner);
+  border-radius: var(--scrollbar-corner-radius);
+}
+
+.scrollbar::-webkit-scrollbar-corner:hover {
+  background-color: var(--scrollbar-corner-hover, var(--scrollbar-corner));
+}
+
+.scrollbar::-webkit-scrollbar-corner:active {
+  background-color: var(--scrollbar-corner-active, var(--scrollbar-corner-hover, var(--scrollbar-corner)));
+}
+
+.scrollbar {
+  scrollbar-width: auto;
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: block;
+  width: var(--scrollbar-width, 16px);
+  height: var(--scrollbar-height, 16px);
+}
+
+.scrollbar-thin {
+  scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+  border-radius: var(--scrollbar-track-radius);
+}
+
+.scrollbar-thin::-webkit-scrollbar-track:hover {
+  background-color: var(--scrollbar-track-hover, var(--scrollbar-track));
+}
+
+.scrollbar-thin::-webkit-scrollbar-track:active {
+  background-color: var(--scrollbar-track-active, var(--scrollbar-track-hover, var(--scrollbar-track)));
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: var(--scrollbar-thumb-radius);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover, var(--scrollbar-thumb));
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:active {
+  background-color: var(--scrollbar-thumb-active, var(--scrollbar-thumb-hover, var(--scrollbar-thumb)));
+}
+
+.scrollbar-thin::-webkit-scrollbar-corner {
+  background-color: var(--scrollbar-corner);
+  border-radius: var(--scrollbar-corner-radius);
+}
+
+.scrollbar-thin::-webkit-scrollbar-corner:hover {
+  background-color: var(--scrollbar-corner-hover, var(--scrollbar-corner));
+}
+
+.scrollbar-thin::-webkit-scrollbar-corner:active {
+  background-color: var(--scrollbar-corner-active, var(--scrollbar-corner-hover, var(--scrollbar-corner)));
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-track-gray-100 {
+  --scrollbar-track: #f3f4f6 !important;
+}
+
+.scrollbar-track-transparent {
+  --scrollbar-track: transparent !important;
+}
+
+.scrollbar-track-base {
+  --scrollbar-track: #0f0e17 !important;
+}
+
+.scrollbar-thumb-gray-900 {
+  --scrollbar-thumb: #111827 !important;
+}
+
+.scrollbar-thumb-transparent {
+  --scrollbar-thumb: transparent !important;
+}
+
+.scrollbar-thumb-primary {
+  --scrollbar-thumb: #EEBE21 !important;
+}
+
+.scrollbar-corner-slate-100 {
+  --scrollbar-corner: #f1f5f9 !important;
+}
+
+.scrollbar-track-rounded {
+  --scrollbar-track-radius: 0.25rem;
+}
+
+.scrollbar-thumb-rounded {
+  --scrollbar-thumb-radius: 0.25rem;
+}
+
+.scrollbar-w-40 {
+  --scrollbar-width: 10rem;
+}
+
+.scrollbar-w-\[\] {
+  --scrollbar-width: ;
+}
+
+.scrollbar-w-\[2\] {
+  --scrollbar-width: 2;
+}
+
+.scrollbar-w-\[2vw\] {
+  --scrollbar-width: 2vw;
+}
+
+.scrollbar-w-\[1vw\] {
+  --scrollbar-width: 1vw;
+}
+
+.scrollbar-w-\[0\.51vw\] {
+  --scrollbar-width: 0.51vw;
+}
+
+.scrollbar-w-\[0\.5vw\] {
+  --scrollbar-width: 0.5vw;
+}
+
+.scrollbar-w-\[0\.2vw\] {
+  --scrollbar-width: 0.2vw;
+}
+
+.scrollbar-w-\[0\.6vw\] {
+  --scrollbar-width: 0.6vw;
+}
+
+.scrollbar-w-\[0\.3vw\] {
+  --scrollbar-width: 0.3vw;
+}
+
+.scrollbar-w-\[0\.4vw\] {
+  --scrollbar-width: 0.4vw;
+}
+
+.group:hover .group-hover\:bg-gray-800\/60 {
+  background-color: rgb(31 41 55 / 0.6);
+}
+
+.group:focus .group-focus\:outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1189,15 +1353,6 @@ video {
 }
 
 .focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.group:hover .group-hover\:bg-gray-800\/60 {
-  background-color: rgb(31 41 55 / 0.6);
-}
-
-.group:focus .group-focus\:outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
