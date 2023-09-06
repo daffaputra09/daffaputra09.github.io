@@ -60,19 +60,19 @@
     <div class="flex relative justify-center items-center">
         <div id="desktop-scene" class=" w-screen h-screen text-center relative overflow-hidden hidden lg:block">
             <img src="public/img/bg.webp" alt="Foto Anda" class="mx-auto w-full h-full object-cover">   
-            <img src="public/img/a.webp" class="absolute w-full h-full  object-cover " data-depth="-0.10"/>
-            <img src="public/img/b.webp" class="absolute w-full h-full  object-cover " data-depth="-0.15"/>
-            <img src="public/img/c.webp" class="absolute w-full h-full  object-cover " data-depth="-0.10"/>
-            <img src="public/img/d.webp" class="absolute w-full h-full  object-cover " data-depth="0.65"/>
-            <img src="public/img/e.webp" class="absolute w-full h-full  object-cover " data-depth="0.20"/>
-            <img src="public/img/f.webp" class="absolute w-full h-full  object-cover " data-depth="0.35"/>
-            <img src="public/img/g.webp" class="absolute w-full h-full  object-cover " data-depth="0.10"/>
-            <img src="public/img/h.webp" class="absolute w-full h-full  object-cover " data-depth="0.60"/>
-            <img src="public/img/i.webp" class="absolute w-full h-full  object-cover " data-depth="0.10"/>
-            <img src="public/img/j.webp" class="absolute w-full h-full  object-cover " data-depth="0.30"/>
+            <img src="public/img/a.webp" class="absolute w-full h-full object-cover" data-depth="-0.10"/>
+            <img src="public/img/b.webp" class="absolute w-full h-full object-cover" data-depth="-0.15"/>
+            <img src="public/img/c.webp" class="absolute w-full h-full object-cover" data-depth="-0.10"/>
+            <img src="public/img/d.webp" class="absolute w-full h-full object-cover" data-depth="0.65"/>
+            <img src="public/img/e.webp" class="absolute w-full h-full object-cover" data-depth="0.20"/>
+            <img src="public/img/f.webp" class="absolute w-full h-full object-cover" data-depth="0.35"/>
+            <img src="public/img/g.webp" class="absolute w-full h-full object-cover" data-depth="0.10"/>
+            <img src="public/img/h.webp" class="absolute w-full h-full object-cover" data-depth="0.60"/>
+            <img src="public/img/i.webp" class="absolute w-full h-full object-cover" data-depth="0.10"/>
+            <img src="public/img/j.webp" class="absolute w-full h-full object-cover" data-depth="0.30"/>
         </div>
 
-        <div id="mobile-scene" class="h-screen text-center overflow-hidden lg:hidden  ">
+        <!-- <div id="mobile-scene" class="h-screen text-center overflow-hidden lg:hidden  ">
             <img src="public/img/bg2.png" alt="Foto Anda" class="mx-auto h-full object-cover">   
             <img src="public/img/a.webp" class="h-full object-cover" data-depth="-0.10"/>
             <img src="public/img/b.webp" class="h-full object-cover" data-depth="-0.15"/>
@@ -84,8 +84,23 @@
             <img src="public/img/h.webp" class="h-full object-cover" data-depth="0.60"/>
             <img src="public/img/i.webp" class="h-full object-cover" data-depth="0.10"/>
             <img src="public/img/j.webp" class="h-full object-cover" data-depth="0.30"/>
+        </div> -->
+        <div class="relative h-screen lg:hidden ">
+          <div id="mobile-scene" class="h-screen min-w-max">
+            <img src="public/img/bg2.png" alt="Foto Anda" class="mx-auto h-full object-cover">   
+            <img src="public/img/a.webp" class="h-full" data-depth="-0.10"/>
+            <img src="public/img/b.webp" class="h-full" data-depth="-0.15"/>
+            <img src="public/img/c.webp" class="h-full" data-depth="-0.10"/>
+            <img src="public/img/d.webp" class="h-full" data-depth="0.65"/>
+            <img src="public/img/e.webp" class="h-full" data-depth="0.20"/>
+            <img src="public/img/f.webp" class="h-full" data-depth="0.35"/>
+            <img src="public/img/g.webp" class="h-full" data-depth="0.10"/>
+            <img src="public/img/h.webp" class="h-full" data-depth="0.60"/>
+            <img src="public/img/i.webp" class="h-full" data-depth="0.10"/>
+            <img src="public/img/j.webp" class="h-full" data-depth="0.30"/>
+          </div>
         </div>
-        <div class="bg-black h-screen w-screen z-0 opacity-30 absolute"></div>
+        <div class="bg-black min-h-screen w-screen z-0 opacity-30 absolute"></div>
         <div class="hero-text whitespace-nowrap absolute text-3xl sm:text-[3rem] font-bold text-white border-r-2 border-white" id="hero-text"></div>
     </div>
     <div class="h-screen bg-purple-800">
