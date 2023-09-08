@@ -23,7 +23,7 @@
   <!-- <link rel="stylesheet" href="public/css/style.css"> -->
   <title>Daffa's Portofolio</title>
 </head>
-<body class="overflow-x-hidden scrollbar scrollbar-w-[0.5vw] scrollbar-thumb-primary scrollbar-track-base scrollbar-thumb-rounded">
+<body class="bg-base overflow-x-hidden scrollbar scrollbar-w-[0.5vw] scrollbar-thumb-primary scrollbar-track-base scrollbar-thumb-rounded">
     <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 w-[100%] z-50 fixed">
         <div class="container flex flex-wrap items-center justify-between mx-auto w-[95%]  ">
         <a href="#home" class="flex items-center">
@@ -57,19 +57,20 @@
         </div>
         </div>
       </nav>
-    <div class="flex relative justify-center items-center bg-[url('../img/bg.webp')] bg-cover">
+    <section id="home" class="flex relative justify-center items-center bg-[url('../img/bg.webp')] bg-cover">
         <div id="desktop-scene" class=" w-screen h-screen text-center relative overflow-hidden hidden lg:block">
             <img src="public/img/bg.webp" alt="Foto Anda" class="mx-auto w-full h-full object-cover">   
             <img src="public/img/a.webp" class="absolute w-full h-full object-cover" data-depth="-0.10"/>
             <img src="public/img/b.webp" class="absolute w-full h-full object-cover" data-depth="-0.15"/>
             <img src="public/img/c.webp" class="absolute w-full h-full object-cover" data-depth="-0.10"/>
-            <img src="public/img/d.webp" class="absolute w-full h-full object-cover" data-depth="0.65"/>
+            <img src="public/img/d.webp" class="absolute w-full h-full object-cover" data-depth="0.50"/>
             <img src="public/img/e.webp" class="absolute w-full h-full object-cover" data-depth="0.20"/>
             <img src="public/img/f.webp" class="absolute w-full h-full object-cover" data-depth="0.35"/>
             <img src="public/img/g.webp" class="absolute w-full h-full object-cover" data-depth="0.10"/>
-            <img src="public/img/h.webp" class="absolute w-full h-full object-cover" data-depth="0.60"/>
             <img src="public/img/i.webp" class="absolute w-full h-full object-cover" data-depth="0.10"/>
+            <img src="public/img/h.webp" class="absolute w-full h-full object-cover" data-depth="0.60"/>
             <img src="public/img/j.webp" class="absolute w-full h-full object-cover" data-depth="0.30"/>
+            <img src="public/img/k.webp" class="absolute w-full h-full object-cover" data-depth="0.50"/>
         </div>
         
         <div class="relative h-screen lg:hidden ">
@@ -77,42 +78,317 @@
             <img src="public/img/a.webp" class="h-full" data-depth="-0.10"/>
             <img src="public/img/b.webp" class="h-full" data-depth="-0.15"/>
             <img src="public/img/c.webp" class="h-full" data-depth="-0.10"/>
-            <img src="public/img/d.webp" class="h-full" data-depth="0.65"/>
+            <img src="public/img/d.webp" class="h-full" data-depth="0.50"/>
             <img src="public/img/e.webp" class="h-full" data-depth="0.20"/>
             <img src="public/img/f.webp" class="h-full" data-depth="0.35"/>
             <img src="public/img/g.webp" class="h-full" data-depth="0.10"/>
-            <img src="public/img/h.webp" class="h-full" data-depth="0.60"/>
             <img src="public/img/i.webp" class="h-full" data-depth="0.10"/>
+            <img src="public/img/h.webp" class="h-full" data-depth="0.60"/>
             <img src="public/img/j.webp" class="h-full" data-depth="0.30"/>
+            <img src="public/img/k.webp" class="h-full" data-depth="0.50"/>
           </div>
         </div>
         <div class="bg-black h-screen absolute w-screen z-0 opacity-30"></div>
         <div class="hero-text whitespace-nowrap absolute text-3xl sm:text-[3rem] font-bold text-white border-r-2 border-white" id="hero-text"></div>
    <!-- <div class="bg-black min-h-screen w-screen z-0 opacity-30 absolute inset-0"></div>
         <div class="hero-text whitespace-nowrap absolute text-3xl sm:text-[3rem] font-bold text-white border-r-2 border-white" id="hero-text"></div> -->
+    </section>
+    <section class="about bg-base container mx-auto " id="about" >
+      <div class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-16 bg-base mx-auto text-white">
+        <h1 class="font-bold tracking-wider text-2xl md:text-4xl  ">About Me</h1>
+        <div class="mt-8 grid lg:grid-cols-3 items-center ">
+          <div class="lg:col-span-2">
+            <p>Halo! saya <span class="text-primary">Daffa Putra Pasetya</span> , seorang pelajar yang tertarik pada bidang Front-End Development dan UI/UX Design. Saya merasa sangat tertarik dengan bagaimana desain dan development dapat bersatu untuk menciptakan pengalaman digital yang menakjubkan bagi pengguna.</p> 
+            <br>
+            <p>Saya senang belajar dan mencari tahu tentang tren terbaru dalam industri ini. Saya juga sedang meningkatkan keterampilan saya dalam bahasa pemrograman seperti HTML, CSS, dan JavaScript, serta aplikasi desain seperti Adobe Photoshop dan Figma.</p>
+            <br>
+            <p class="hidden lg:block">Dalam proses belajar, saya selalu berusaha untuk menciptakan antarmuka pengguna yang menarik dan mudah digunakan, serta fokus pada kualitas kode dan responsivitas yang baik.</p>
+            <br class="hidden lg:block">
+            <p>Saya sangat bersemangat dengan masa depan di bidang Front-End Development dan UI/UX Design. Terima kasih sudah mengunjungi profil saya!</p>
+          
+          </div>
+          <div class="mt-10 lg:mt0">
+            <img src="public/img/about.webp" class="w-80 md:w-96 mx-auto lg:ml-auto lg:mr-0 " alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="work bg-base container mx-auto" id="work" >
+      <div class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-24 mx-auto text-white">
+      <div class=" ">
+        <h1 class=" font-bold tracking-wider text-2xl md:text-4xl mt-1">Work</h1>
+        <ul class="block mt-4 p-0 list-none text-center">
+          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96  hover:scale-105 transition-all duration-500" >
+            <button  data-modal-target="Otorent" data-modal-toggle="Otorent" class="text-start">
+            <img src="public/img/otorent.webp" alt="">
+            <h1 class="font-semibold mt-3 text-xl md:text-2xl">Otorent UI/UX Design</h1>
+            <p>Car Rental App</p>
+            <p>&nbsp</p>
+          </button>
+          </li>
+          <div id="Otorent" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+            <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <!-- Modal content -->
+                <div class="relative  rounded-lg shadow bg-second">
+                    <!-- Modal header -->
+                    <div class="flex items-start justify-between p-4 pt-5 ">
+                        <h3 class="text-xl font-semibold text-white">
+                          Otorent UI/UX Design
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent  rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white" data-modal-hide="Otorent">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div id="indicators-carousel" class="relative" data-carousel="static">
+                      <!-- Carousel wrapper -->
+                      <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">                        
+                          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                              <img src="public/img/otorent.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                          </div>                      
+                          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                              <img src="public/img/otorent2.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                          </div>                       
+                          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                              <img src="public/img/otorent3.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                          </div>                       
+                          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                              <img src="public/img/otorent4.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                          </div>
+  
+                      </div>
+                      <!-- Slider controls -->
+                      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
+                              <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                              <span class="sr-only">Previous</span>
+                          </span>
+                      </button>
+                      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
+                              <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                              <span class="sr-only">Next</span>
+                          </span>
+                      </button>
+                  </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-6 space-x-2 text-start ">
+                        <p>Otorent, UI / UX Design dengan studi kasus aplikasi sewa kendaraan. Dalam penggunaannya, user dapat memilih kategori, memilih kendaraan, dan menyewa kendaraan. Desain ini dibuat dengan menggunakan tools Figma</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96  hover:scale-105 transition-all duration-500" >
+          <button  data-modal-target="Kangyucil" data-modal-toggle="Kangyucil" class="text-start">
+          <img src="public/img/kangyucil.webp" alt="">
+          <h1 class="font-semibold mt-3 text-xl md:text-2xl"> Event Documentation</h1>
+          <p>Kakang Mbakyu Cilik 2022</p>
+          <p>&nbsp</p>
+        </button>
+        </li>
+        <div id="Kangyucil" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+          <div class="relative w-full h-full max-w-2xl md:h-auto">
+              <!-- Modal content -->
+              <div class="relative  rounded-lg shadow bg-second">
+                  <!-- Modal header -->
+                  <div class="flex items-start justify-between p-4 pt-5 ">
+                      <h3 class="text-xl font-semibold text-white">
+                        Kakang Mbakyu Cilik 2022
+                      </h3>
+                      <button type="button" class="text-gray-400 bg-transparent  rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white" data-modal-hide="Kangyucil">
+                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                      </button>
+                  </div>
+                  <!-- Modal body -->
+                  <div id="indicators-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">                      
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="public/img/kangyucil.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>                  
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="public/img/kangyucil2.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>                      
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="public/img/kangyucil3.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>                     
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="public/img/kangyucil4.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="public/img/kangyucil5.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="public/img/kangyucil6.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="public/img/kangyucil7.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="public/img/kangyucil8.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="public/img/kangyucil9.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+                  <!-- Modal footer -->
+                  <div class="flex items-center p-6 space-x-2 text-start ">
+                      <p>Event Documentation Kakang Mbakyu Cilik 2022. Kakang Mbakyu Cilik Kota Malang merupakan program yang dibuat dengan tujuan untuk mempermudah Dinas Kebudayaan dan Pariwisata Kota Malang dalam mencetak atau melahirkan duta wisata yang profesional dan berkarakter di Kota Malang. </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96  hover:scale-105 transition-all duration-500" >
+            <button  data-modal-target="Drent" data-modal-toggle="Drent" class="text-start">
+            <img src="public/img/D-Rent.webp" alt="">
+            <h1 class="font-semibold mt-3 text-xl md:text-2xl"> D-Rent UI/UX Design</h1>
+            <p>Camera Rental App</p>
+            <p>&nbsp</p>
+          </button>
+          </li>
+          <div id="Drent" data-modal-backdrop="static" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full">
+            <div class="relative w-full h-full max-w-2xl md:h-auto">
+                <!-- Modal content -->
+                <div class="relative  rounded-lg shadow bg-second">
+                    <!-- Modal header -->
+                    <div class="flex items-start justify-between p-4 pt-5 ">
+                        <h3 class="text-xl font-semibold text-white">
+                          D-Rent UI/UX Design
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent  rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-600 hover:text-white" data-modal-hide="Drent">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div id="indicators-carousel" class="relative" data-carousel="static">
+                      <!-- Carousel wrapper -->
+                      <div class="relative h-56 overflow-hidden rounded-lg md:h-96 ">                        
+                          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                              <img src="public/img/D-Rent.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                          </div>                        
+                          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                              <img src="public/img/D-Rent2.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                          </div>                        
+                          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                              <img src="public/img/D-Rent3.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                          </div>                       
+                          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                              <img src="public/img/D-Rent4.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                          </div>
+                      </div>
+                      <!-- Slider controls -->
+                      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
+                              <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                              <span class="sr-only">Previous</span>
+                          </span>
+                      </button>
+                      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 g group-focus:outline-none">
+                              <svg aria-hidden="true" class="w-5 h-5  sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                              <span class="sr-only">Next</span>
+                          </span>
+                      </button>
+                  </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-6 space-x-2 text-start ">
+                        <p>D-Rent, UI / UX Design dengan studi kasus aplikasi sewa kamera. Dalam penggunaannya, user dapat memilih kategori dan alat, menambah ke wishlist, menyewa, dan melakukan update pada informasi profil. Desain ini dibuat dengan menggunakan tools Figma
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </ul>  
+        </div> 
+        <div class="mt-10">
+          <h1 class=" font-bold tracking-wider text-2xl md:text-4xl">Achievement</h1>
+          <ul class="block mt-4 p-0 list-none text-center">
+            <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
+              <a href="https://youtu.be/5M9JHi3omUs" target="_blank">
+              <img src="public/img/bantengan.jpg" alt="">
+              <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 2 Tingkat Nasional</h1>
+              <p>Film dokumenter berjudul <span class="font-bold">Bantengan "Yang Tak Lekang Oleh Zaman"</span></p>
+              <p>&nbsp</p>
+            </a>
+            </li>
+            <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
+              <a href="https://youtu.be/jOG-f_KMrZg" target="_blank">
+              <img src="public/img/apem.png" alt="">
+              <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 5 Tingkat Provinsi</h1>
+              <p>Film dokumenter berjudul <span class="font-bold">Apem "Mungil Penuh Tafsir"</span></p>
+              <p>&nbsp</p>
+            </a>
+            </li>
+            <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
+              <a href="https://youtu.be/mAOe2A74myI" target="_blank">
+              <img src="public/img/kopi.jpg" alt="">
+              <h1 class="font-semibold mt-3 text-xl md:text-2xl">Juara 1 Tingkat Kota</h1>
+              <p>Film dokumenter berjudul <span class="font-bold">Kopi Sumberdem "Ada Perjalanan Panjang Untuk Menjadi Secangkir Kopi"</span></p>
+            </a>
+            </li>
+          </ul>  
+        </div> 
+      </div>
     </div>
-    <div class="h-screen bg-purple-800">
-    adawd
+    <div class="contact bg-base container mx-auto" id="contact" >
+      <div class="w-[90%] pt-1 md:pt-1 pb-8 md:pb-12 mx-auto text-white ">
+        <div class="gap-[4vw] mt-7 md:mt-14 grid lg:inline-grid lg:grid-cols-2 md:grid-cols-2 w-[100%] pt-16 pb-16 lg:pb-10 bg-second rounded-2xl">
+          <div class="">
+            <img src="public/img/contact.svg" class="w-96 lg:w-[28rem] mx-auto  md:pt-12 items-center" alt="">
+          </div>
+          <div class="w-[90%] mx-auto">
+            <div class="">
+            <h2 class="font-semibold text-xl md:text-2xl">Contact Me</h2>
+            <form action="https://formsubmit.co/contactwebsitedp@gmail.com" method="post" class="mt-5">
+              <input type="text" name="Name" class="w-[100%] my-3 rounded-lg bg-form  border-none ring-0 stroke-none py-3" placeholder="Your Name" required>
+              <input type="email" name="Email" class="w-[100%] my-3 rounded-lg bg-form border-none ring-0 stroke-none py-3" placeholder="Your Email" required>
+              <textarea name="Message" id=""  rows="8" class="w-[100%] my-3 rounded-lg bg-form border-none ring-0 stroke-none py-3 px-3" placeholder="Message" required></textarea>
+              <button type="submit" class="bg-primary hover:bg-darkprimary w-[100%] mt-3 py-3 rounded-full">Submit</button>
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
     </div>
+   
 
 
 
 
 
-<!-- Flowbite -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
-    <script src="public/js/typing.js"></script>
-    <script>
-        var scene = document.getElementById('desktop-scene');
-        var parallax = new Parallax(scene);
-    </script>
-    <script>
-        var scene = document.getElementById('mobile-scene');
-        var parallax = new Parallax(scene);
-    </script>
-          <!-- icons -->
-          <script>
-            feather.replace();
-          </script>
+  <!-- Flowbite -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
+  <!-- Text -->
+  <script src="public/js/typing.js"></script>
+
+  <!-- Parallax -->
+  <script>
+      var scene = document.getElementById('desktop-scene');
+      var parallax = new Parallax(scene);
+  </script>
+  <script>
+      var scene = document.getElementById('mobile-scene');
+      var parallax = new Parallax(scene);
+  </script>
+  
+  <!-- icons -->
+  <script>
+    feather.replace();
+  </script>
 </body>
 </html>
