@@ -19,24 +19,21 @@
 
   <!-- icons -->
   <script src="https://unpkg.com/feather-icons"></script>
-
-  <!-- Jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  
   <link rel="stylesheet" href="public/css/output.css">
   <!-- <link rel="stylesheet" href="public/css/style.css"> -->
   <title>Daffa's Portofolio</title>
 </head>
 <body class="bg-base overflow-x-hidden scrollbar scrollbar-w-[0.5vw] scrollbar-thumb-primary scrollbar-track-base scrollbar-thumb-rounded">
-    <nav class="bg-black border-gray-200 px-2 sm:px-4 py-2.5 w-[100%] z-50 fixed">
+  <header id="header" class="transition-all duration-500">
+    <nav class="bg-black bg-opacity-50 border-gray-200 px-2 sm:px-4 py-2.5 w-[100%] z-50 fixed">
         <div class="container flex flex-wrap items-center justify-between mx-auto w-[95%]  ">
         <a href="#home" class="flex items-center">
             <img src="https://raw.githubusercontent.com/daffaputra09/assets/main/logo.png" class="h-7 mt-1 mr-3 sm:h-9" alt="Daffa's Logo" />
             <span class="self-center text-lg md:text-xl font-semibold whitespace-nowrap text-white ">Daffa Putra</span>
         </a>
         <div class="flex lg:order-2 items-center">
-            <a href="https://github.com/daffaputra09"    target="_blank" class="transition-all duration-200 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/GitHub.png"   class="h-8 lg:h-10" alt="Github"  ></a>
-            <a href="https://www.behance.net/daffaa-dp"    target="_blank" class="transition-all duration-200 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/behance.png"   class="h-8 lg:h-10" alt="behance"  ></a>
+            <a href="https://github.com/daffaputra09"    target="_blank" class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/GitHub.png"   class="h-8 lg:h-10" alt="Github"  ></a>
+            <a href="https://www.behance.net/daffaa-dp"    target="_blank" class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/behance.png"   class="h-8 lg:h-10" alt="behance"  ></a>
             <a href="https://www.instagram.com/daffaa.dp"  target="_blank" class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/instagram.png" class="h-8 lg:h-10" alt="instagram"  ></a>
             <a href="https://www.linkedin.com/in/daffaa-dp" target="_blank" class="transition-all duration-250 hover:bg-primary rounded-full mx-1 md:mx-2  md:mr-0 items-center h-8 lg:h-10 " ><img src="https://raw.githubusercontent.com/daffaputra09/assets/main/linkedin.png"  class="h-8 lg:h-10" alt="linkedin"  ></a>
             <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-1 text-sm text-white rounded-full lg:hidden lg:hover:bg-primary  " aria-controls="navbar-cta" aria-expanded="false">
@@ -61,6 +58,7 @@
         </div>
         </div>
       </nav>
+    </header>
     <section id="home" class="flex relative justify-center items-center bg-[url('../img/bg.webp')] bg-cover">
         <div id="desktop-scene" class=" w-screen h-screen text-center relative overflow-hidden hidden lg:block">
             <img src="public/img/bg.webp" alt="Foto Anda" class="mx-auto w-full h-full object-cover">   
@@ -97,11 +95,11 @@
    <!-- <div class="bg-black min-h-screen w-screen z-0 opacity-30 absolute inset-0"></div>
         <div class="hero-text whitespace-nowrap absolute text-3xl sm:text-[3rem] font-bold text-white border-r-2 border-white" id="hero-text"></div> -->
     </section>
-    <section class="about bg-base container mx-auto " id="about" >
-      <div class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-16 bg-base mx-auto text-white">
+    <section class="about bg-slate-400 container mx-auto py-14 min-h-screen px-5 lg:px-0" id="about" >
+      <div class="xl:w-[90%]  bg-green-300 mx-auto text-white">
         <h1 class="font-bold tracking-wider text-2xl md:text-4xl  ">About Me</h1>
-        <div class="mt-8 grid lg:grid-cols-3 items-center ">
-          <div class="lg:col-span-2">
+        <div class="grid lg:grid-cols-3 items-center bg-slate-300 ">
+          <div class="lg:col-span-2 bg-stone-500">
             <p>Halo! saya <span class="text-primary">Daffa Putra Pasetya</span> , seorang pelajar yang tertarik pada bidang Front-End Development dan UI/UX Design. Saya merasa sangat tertarik dengan bagaimana desain dan development dapat bersatu untuk menciptakan pengalaman digital yang menakjubkan bagi pengguna.</p> 
             <br>
             <p>Saya senang belajar dan mencari tahu tentang tren terbaru dalam industri ini. Saya juga sedang meningkatkan keterampilan saya dalam bahasa pemrograman seperti HTML, CSS, dan JavaScript, serta aplikasi desain seperti Adobe Photoshop dan Figma.</p>
@@ -111,70 +109,43 @@
             <p>Saya sangat bersemangat dengan masa depan di bidang Front-End Development dan UI/UX Design. Terima kasih sudah mengunjungi profil saya!</p>
           
           </div>
-          <div class="mt-10 lg:mt0">
+          <div class=" bg-slate-900">
             <img src="public/img/about.webp" class="w-80 md:w-96 mx-auto lg:ml-auto lg:mr-0 " alt="">
           </div>
         </div>
       </div>
     </section>
-    <div class="work bg-base container mx-auto" id="work" >
-      <div class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-24 mx-auto text-white">
-      <div class=" ">
-        <h1 class=" font-bold tracking-wider text-2xl md:text-4xl mt-1">Work</h1>
-        <ul class="block mt-4 p-0 list-none text-center">
-          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96  hover:scale-105 transition-all duration-500" >
-            <button  data-modal-target="Otorent" data-modal-toggle="Otorent" class="text-start">
-            <img src="public/img/otorent.webp" alt="">
-          </button>
-          </li>
-        <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96  hover:scale-105 transition-all duration-500" >
-          <button  data-modal-target="Kangyucil" data-modal-toggle="Kangyucil" class="text-start">
-          <img src="public/img/kangyucil.webp" alt="">
-        </button>
-        </li>
-          <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96  hover:scale-105 transition-all duration-500" >
-            <button  data-modal-target="Drent" data-modal-toggle="Drent" class="text-start">
-            <img src="public/img/D-Rent.webp" alt="">
-          </button>
-          </li>
-        </ul>  
-        </div> 
-        <div class="mt-10">
-          <h1 class=" font-bold tracking-wider text-2xl md:text-4xl">Achievement</h1>
-          <ul class="block mt-4 p-0 list-none text-center">
-            <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
-              <a href="https://youtu.be/5M9JHi3omUs" target="_blank">
-              <img src="public/img/bantengan.jpg" alt="">
-            </a>
-            </li>
-            <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
-              <a href="https://youtu.be/jOG-f_KMrZg" target="_blank">
-              <img src="public/img/apem.png" alt="">
-            </a>
-            </li>
-            <li class="inline-block md:mx-4 my-4 lg:mx-8 lg:my-6  w-[96%] md:w-80 lg:w-96 text-start hover:scale-105 transition-all duration-500" >
-              <a href="https://youtu.be/mAOe2A74myI" target="_blank">
-              <img src="public/img/kopi.jpg" alt="">
-            </a>
-            </li>
-          </ul>  
-        </div> 
-      </div>
-    </div>
-    <div class="work bg-base container mx-auto" id="work" >
-      <div class="w-[90%] pt-20 md:pt-24 pb-20 md:pb-24 mx-auto text-white">
-        <div class="grid grid-cols-3">
-          <div class="py-10 px-10 bg-[#16151e] lg:col-span-2 rounded-md border border-[#808080]">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex repellat accusantium facilis soluta praesentium iste provident assumenda accusamus magni.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, facilis nulla tempore aliquam laborum nisi eveniet accusamus tempora delectus repellendus voluptatum fugiat earum consequatur magni illum? Est laudantium reprehenderit perferendis.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+ 
+   
 
 
 
 
+  <script>
+    const header = document.getElementById("header")
+    let lastScroll = 0;
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll <= 0) {
+        header.classList.remove("opacity-100");
+        return;
+      }
+
+      if (currentScroll > lastScroll && !header.classList.contains("translate-y-full")) {
+        header.classList.remove("opacity-100");
+        header.classList.add("translate-y-full");
+      } else if (
+        currentScroll < lastScroll &&
+        header.classList.contains("translate-y-full")
+      ) {
+        header.classList.remove("translate-y-full");
+        header.classList.add("opacity-100");
+      }
+      lastScroll = currentScroll;
+    });
+
+  </script>
   <!-- Flowbite -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 

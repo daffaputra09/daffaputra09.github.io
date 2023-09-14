@@ -36,4 +36,4 @@ function smoothScroll() {
 
 function resizeBodyHeight() {
   document.body.style.height = document.querySelector('.viewport').scrollHeight + 'px';
-}
+}z
